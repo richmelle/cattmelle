@@ -1,0 +1,130 @@
+body {
+  font-family: 'Arial', sans-serif; 
+  margin: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffb6c1;
+  padding: 10px 0; /* This is already pretty minimal */
+  text-align: center;
+  margin-bottom: 0; /* Added to remove any default margin */
+}
+
+header h1 {
+  color: #ffffff; 
+  margin-bottom: 5px;
+}
+
+nav {
+  background-color: #fff; 
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff95a9e5;
+  font-weight: bold;
+}
+
+#hero {
+  background-color: ;
+  padding: 20px 20px 90px 20px; /* Reduced top padding, kept bottom padding */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero img {
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+#hero h2 {
+  color: #ffb6c1;
+  font-size: 1.0em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#cat-breeds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 50px 20px;
+}
+
+.cat-breed {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cat-breed img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cat-breed a {
+    text-decoration: none;
+    color: #ffaaca; 
+    font-weight: bold;
+}
+
+footer {
+  background-color: #ffb6c1;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero img {
+    max-width: 95%;
+  }
+  #cat-breeds {
+    grid-template-columns: 1fr;
+  }
+}
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffaaca;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff95be;
+}
+

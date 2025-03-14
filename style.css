@@ -1,0 +1,96 @@
+body {
+            font-family: 'times new roman', cursive;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+            background: #ffd6e6;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Floating Clouds */
+        .cloud {
+            position: absolute;
+            opacity: 0.6;
+            animation: float 8s infinite alternate;
+        }
+        .cloud1 { top: 10%; left: 10%; width: 120px; animation-duration: 5s; }
+        .cloud2 { top: 30%; left: 60%; width: 150px; animation-duration: 7s; }
+        .cloud3 { top: 50%; left: 20%; width: 100px; animation-duration: 6s; }
+        
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 50px;
+            text-shadow: 0px 0px 5px white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .cat-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 8px solid white;
+            box-shadow: none;
+            animation: spin 5s linear infinite;
+            margin: 30px;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background: white;
+            color: #ff80b3;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background: #ff66b2;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* New Button (No Glow) */
+        .button-alt {
+            display: inline-block;
+            background: #ff80b3;
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 15px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .button-alt:hover {
+            background: #ff4d94;
+            transform: scale(1.1);
+        }
+
+    </style>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Different Cat Breeds</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffd5df;
+    text-align: center;
+}
+
+h1 {
+    color: #FF69B4;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: pink;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.breed {
+    background-color: #FFB6C1;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breed img {
+    max-width: 120px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffaaca;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff95be;
+}
+
+/* Bulleted List */
+.bottom-section {
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #FFB6C1;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.bottom-section h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+ul li {
+    color: white;
+    margin: 5px 0;
+}
+</style>
+</head>
+<body>
+    <h1>numbered list</h1>
+    <div class="container">
+        <div class="breed" id="breed1"><span>1. Shorthair</span><img src="3.jpg" alt="Shorthair Cat"></div>
+        <div class="breed" id="breed2"><span>2. British Shorthair</span><img src="7.jpg" alt="British Shorthair Cat"></div>
+        <div class="breed" id="breed3"><span>3. Balinese</span><img src="4.jpg" alt="Balinese Cat"></div>
+        <div class="breed" id="breed4"><span>4. Siamese</span><img src="10.jpg" alt="Siamese Cat"></div>
+        <div class="breed" id="breed5"><span>5. Burmese</span><img src="8.jpg" alt="Burmese Cat"></div>
+        <div class="breed" id="breed6"><span>6. Persian</span><img src="9.jpg" alt="Persian Cat"></div>
+        <div class="breed" id="breed7"><span>7. Bombay</span><img src="6.jpg" alt="Bombay Cat"></div>
+        <div class="breed" id="breed8"><span>8. Abyssinian</span><img src="1.jpg" alt="Abyssinian Cat"></div>
+        <div class="breed" id="breed9"><span>9. Bobtail</span><img src="2.jpg" alt="Bobtail Cat"></div>
+        <div class="breed" id="breed10"><span>10. Bengal</span><img src="5.jpg" alt="Bengal Cat"></div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="prevBreed()">Previous</button>
+        <button onclick="nextBreed()">Next</button>
+    </div>
+
+    <div class="bottom-section">
+        <h2>bulleted list : fun facts</h2>
+        <ul>
+            <li>cats can rotate their ears 180 degrees</li>
+            <li>the world's oldest cat lived to be 38 years old</li>
+            <li>cats spend about 70% of their lives sleeping</li>
+            <li>each cat's nose print is unique, like a human fingerprint</li>
+            <li>cats have a special reflective layer in their eyes called the tapetum lucidum</li>
+        </ul>
+    </div>
+
+    <script>
+        let currentIndex = 1;
+        const totalBreeds = 10;
+
+        function showBreed(index) {
+            document.querySelectorAll('.breed').forEach(b => b.style.display = 'none');
+            document.getElementById('breed' + index).style.display = 'flex';
+        }
+
+        function nextBreed() {
+            currentIndex = currentIndex < totalBreeds ? currentIndex + 1 : 1;
+            showBreed(currentIndex);
+        }
+
+        function prevBreed() {
+            currentIndex = currentIndex > 1 ? currentIndex - 1 : totalBreeds;
+            showBreed(currentIndex);
+        }
+
+        // Show the first breed when page loads
+        showBreed(currentIndex);
+    </script>
+    
+    <div class="buttons">
+        <button onclick="location.href='frontpage.html'">Home</button>
+    </div>
+</body>
+</html>

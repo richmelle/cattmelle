@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #ffffff; /* White background */
+}
+
+header {
+  background-color: #ffb6c1; /* Light Pink */
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff; /* White text */
+}
+
+#hero {
+  background-color: #fff; /* White */
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#hero h2 {
+  color: #ffb6c1; /* Light Pink */
+}
+
+#features {
+  padding: 50px 20px;
+}
+
+.feature {
+  background-color: #fff; /* White */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: none; /* No shadow */
+}
+
+footer {
+  background-color: #ffb6c1; /* Light Pink */
+  padding: 10px;
+  text-align: center;
+  color: #fff; /* White text */
+}
+
+#hero {
+  background-color: #fff; 
+  padding: 100px 20px;
+  text-align: center; /* Centers the image horizontally */
+  display: flex;       /* Enables flexbox for vertical centering */
+  flex-direction: column; /* Arranges items vertically */
+  align-items: center;   /* Vertically centers the image */
+}
+
+#hero img {
+  max-width: 80%; /* Prevents image from overflowing */
+  margin-bottom: 10px; /* Adds space between image and heading */
+}
+
+/* ... rest of your CSS ... */

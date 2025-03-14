@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cat Breeds</title>
+<style>
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffb6c1; 
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.breed-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.breed-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.breed-item h2 {
+  font-size: 1.4em;
+  color: #ffb6c1;
+  margin-bottom: 10px;
+}
+
+.breed-item a {
+  text-decoration: none;
+  color: #e6b8af;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .breed-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Explore Exquisite Cat Breeds</h1>
+
+<div class="breed-container">
+  <div class="breed-item">
+    <h2><a href="shorthair.html">Shorthair</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="british short.html">British Shorthair</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="balinese.html">Balinese</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="siamese.html">Siamese</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="burmese.html">Burmese</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="persian.html">Persian</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="bombay.html">Bombay</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="abyssinian.html">Abyssinian</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="bobtail.html">Bobtail</a></h2>
+  </div>
+  <div class="breed-item">
+    <h2><a href="bengal.html">Bengal</a></h2>
+  </div>
+</div>
+
+</body>
+</html>
